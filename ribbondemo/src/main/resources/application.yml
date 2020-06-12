@@ -1,0 +1,13 @@
+server:
+  port: 6003
+spring:
+  application:
+    name: ribbon-demo
+eureka:
+  client:
+    register-with-eureka: true  #注册到Eureka的注册中心
+    fetch-registry: true  #获取注册实例列表
+    service-url:
+      defaultZone: http://localhost:6001/eureka/    #配置注册中心地址
+service-url:
+  demo-service: http://eureka-client-demo   # 请求的eureka实例名
