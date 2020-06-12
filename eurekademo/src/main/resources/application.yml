@@ -11,3 +11,5 @@ eureka:
 spring:
   application:
     name: eureka-server
+
+# localhost:6001即可见eureka界面

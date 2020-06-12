@@ -57,6 +57,7 @@
         <module>eurekademo</module>
         <module>eurekaclientdemo</module>
         <module>ribbondemo</module>
+        <module>feigndemo</module>
     </modules>
 
 </project>

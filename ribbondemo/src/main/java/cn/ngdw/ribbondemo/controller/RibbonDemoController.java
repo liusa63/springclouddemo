@@ -29,9 +29,12 @@ public class RibbonDemoController {
     @Value("${service-url.demo-service}")
     private String userServiceUrl;
 
-    @GetMapping("func")
+    @Value("${spring.application.name}")
+    private String applicationName;
+
+    @GetMapping("getName")
     public Object ribbonDemo(){
-        return restTemplate.getForObject(userServiceUrl+"/eurekaclientdemo/name", String.class);
+        return applicationName + " || "+restTemplate.getForObject(userServiceUrl+"/eurekaclientdemo/getName", String.class);
         /**
          * get请求，只返回结果
          * restTemplate.getForObject(utl, Result.class, param);
