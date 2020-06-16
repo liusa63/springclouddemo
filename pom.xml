@@ -58,6 +58,7 @@
         <module>eurekaclientdemo</module>
         <module>ribbondemo</module>
         <module>feigndemo</module>
+        <module>hystrixdemo</module>
     </modules>
 
 </project>

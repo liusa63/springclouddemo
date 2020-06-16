@@ -1,0 +1,10 @@
+server:
+  port: 6005
+spring:
+  application:
+    name: hystrix-demo
+management:
+  endpoints:
+    web:
+      exposure:
+        exclude: 'hystrix.stream' #暴露hystrix监控端点
