@@ -8,6 +8,7 @@ package cn.ngdw.hystrixdemo;/**
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
+import org.springframework.cloud.netflix.hystrix.EnableHystrix;
 
 /**
  *@ClassName HystrixDemoApplication
@@ -16,7 +17,8 @@ import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
  *@Date 2020/6/16
  *@Version 1.0
  */
-@EnableCircuitBreaker
+//@EnableCircuitBreaker
+@EnableHystrix
 @SpringBootApplication
 public class HystrixDemoApplication {
     public static void main(String[] args) {
