@@ -1,0 +1,15 @@
+server:
+  port: 6006
+spring:
+  cloud:
+    gateway:
+      routes:
+        # 请求的url
+        - id: ngdw
+          # 转发到url
+          uri: https://www.baidu.com
+          predicates:
+          - After=2020-06-17T17:10:06+08:00[Asia/Shanghai]
+  application:
+    name: gateway-demo
+
